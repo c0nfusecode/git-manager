@@ -3,7 +3,9 @@
 ### Installing
 U need intall Node.JS
 
-`curl https://a.rawr.party/install/debian/node.js?v=18 | sh`
+For debian: `curl https://a.rawr.party/install/debian/node.js?v=18 | sh`
+
+Thanks for the easy installer [@gerrustalker](https://github.com/gerrustalker)
 
 [Create your PAT key](https://github.com/settings/tokens?type=beta)
 
