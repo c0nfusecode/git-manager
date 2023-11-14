@@ -1,4 +1,4 @@
-# gitsync
+# git-manager
 
 ## Installing
 
@@ -17,14 +17,18 @@ Thanks for the easy installer [@gerrustalker](https://github.com/gerrustalker)
 ### Clone
 
 ```js
-const testing = new gitsync("username/repo", "/home/path/", "Your PAT Key")
+const testing = new gitsync("username_on_github", "NAME_GITHUB_REPO", "/home/path/repos", "Your PAT Key")
+// NAME_GITHUB_REPO this parameter MUST NOT lead to a repository, it leads to the directory where all repositories are located.
+// To work correctly, a github repository must match the name of NAME_GITHUB_REPO, which in turn matches the name of the folder on your computer.
 testing.clone()
 ```
 
 ### Commit changes
 
 ```js
-const testing = new gitsync("username/repo", "/home/path/", "Your PAT Key")
+const testing = new gitsync("username_on_github", "NAME_GITHUB_REPO", "/home/path/repos", "Your PAT Key")
+// NAME_GITHUB_REPO this parameter MUST NOT lead to a repository, it leads to the directory where all repositories are located.
+// To work correctly, a github repository must match the name of NAME_GITHUB_REPO, which in turn matches the name of the folder on your computer.
 testing.add("--all").then(() => {
     console.log("Adding all files")
 
